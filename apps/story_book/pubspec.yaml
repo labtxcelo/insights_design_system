@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  storybook_flutter: ^0.10.1
+  storybook_flutter: 0.10.1
   design_system:
     path: ../../packages/design_system
 

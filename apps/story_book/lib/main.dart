@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:story_book/stories/widgets/widgets_story_group.dart';
 import 'package:storybook_flutter/storybook_flutter.dart';
 
 void main() {
@@ -9,18 +10,19 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) => Storybook(
-        stories: [
-          Story(
-            name: 'Screens/Counter',
-            description: 'Demo Counter app with about dialog.',
-            builder: (context) => Container(),
-          ),
-          Story(
-            name: 'Widgets/Text',
-            description: 'Simple text widget.',
-            builder: (context) => const Center(child: Text('Simple text')),
-          ),
-        ],
-      );
+  Widget build(BuildContext context) {
+    final plugins = initializePlugins(
+      contentsSidePanel: true,
+      knobsSidePanel: true,
+      initialDeviceFrameData: DeviceFrameData(
+        device: Devices.ios.iPhone13,
+      ),
+    );
+    return Storybook(
+      plugins: plugins,
+      stories: [
+        ...WidgetsStoryGroup.stories,
+      ],
+    );
+  }
 }
