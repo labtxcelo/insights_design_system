@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../design_system.dart';
+
 class InsightsMainButtonStyle {
   final Color backgroundColor;
   final Color disabledColor;
@@ -16,23 +18,17 @@ class InsightsMainButtonStyle {
   final EdgeInsets padding;
 
   const InsightsMainButtonStyle({
-    this.backgroundColor = Colors.black,
-    this.disabledColor = Colors.blueGrey,
-    this.borderColor = Colors.transparent,
-    this.textColor = Colors.white,
-    this.splashColor = Colors.grey,
+    this.backgroundColor = InsightsColors.primary,
+    this.disabledColor = InsightsColors.disabled,
+    this.borderColor = InsightsColors.transparent,
+    this.textColor = InsightsColors.contrast,
+    this.splashColor = InsightsColors.disabled,
     this.height = 50,
     this.width = 200,
     this.radius = 0,
     this.borderWidth = 0,
-    this.splashOpacity = 0.3,
-    this.textStyle = const TextStyle(
-      fontSize: 16,
-      fontWeight: FontWeight.w600,
-      letterSpacing: 0,
-      color: Colors.black,
-      height: 1.5,
-    ),
+    this.splashOpacity = 0.5,
+    this.textStyle = InsightsTextStyles.kBodyStrong,
     this.margin = EdgeInsets.zero,
     this.padding = EdgeInsets.zero,
   });
