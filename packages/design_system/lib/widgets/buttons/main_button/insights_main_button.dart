@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../design_system.dart';
+import '../../../design_system.dart';
 
 class InsightsMainButton extends StatelessWidget {
   final String? buttonText;

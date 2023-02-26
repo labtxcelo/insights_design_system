@@ -1,3 +1,4 @@
 library design_system;
 
-export 'buttons/buttons.dart';
+export 'guides/style_guides.dart';
+export 'widgets/widgets.dart';
