@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 class InsightsMainButton extends StatelessWidget {
   final String? buttonText;
+  final VoidCallback? onTap;
 
   const InsightsMainButton({
     Key? key,
     this.buttonText,
+    this.onTap,
   }) : super(key: key);
 
   @override
