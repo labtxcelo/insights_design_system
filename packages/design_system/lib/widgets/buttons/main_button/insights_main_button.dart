@@ -53,7 +53,11 @@ class InsightsMainButton extends StatelessWidget {
 
   Border get border => Border.all(
         width: style.borderWidth,
-        color: hasCallback ? style.borderColor : InsightsColors.contrast,
+        color: hasCallback
+            ? style.borderColor
+            : style.borderColor != InsightsColors.transparent
+                ? InsightsColors.contrast
+                : InsightsColors.transparent,
       );
 
   BorderRadius get radius => BorderRadius.circular(style.radius);
