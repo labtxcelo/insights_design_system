@@ -5,8 +5,8 @@ import 'package:flutter_test/flutter_test.dart';
 import '../base/base_test.dart';
 
 void main() {
-  group('Button without parameters quality check', () {
-    testWidgets('Make sure that the button contain all default properties',
+  group('Button without parameters quality check.', () {
+    testWidgets('Make sure that the button contain all default properties.',
         (WidgetTester tester) async {
       await tester.pumpWidget(
         widgetTestBase(widget: const InsightsMainButton()),
@@ -19,7 +19,7 @@ void main() {
       expect(find.byType(Text), findsOneWidget);
     });
 
-    testWidgets('Make sure that the button contain all default styles',
+    testWidgets('Make sure that the button contain all default styles.',
         (WidgetTester tester) async {
       await tester.pumpWidget(
         widgetTestBase(widget: const InsightsMainButton()),
@@ -46,8 +46,8 @@ void main() {
     });
   });
 
-  group('Button with parameters quality check', () {
-    testWidgets('Make sure that the button contain specific text',
+  group('Button with parameters quality check.', () {
+    testWidgets('Make sure that the button contain specific text.',
         (WidgetTester tester) async {
       await tester.pumpWidget(
         widgetTestBase(
@@ -60,7 +60,7 @@ void main() {
       expect(find.text('label_test'), findsOneWidget);
     });
 
-    testWidgets('Make sure that the button has been tapped',
+    testWidgets('Make sure that the button has been tapped.',
         (WidgetTester tester) async {
       bool tap = false;
       await tester.pumpWidget(
@@ -76,7 +76,7 @@ void main() {
       expect(tap, isTrue);
     });
 
-    testWidgets('Make sure that the able button contain default styles values',
+    testWidgets('Make sure that the able button contain default styles values.',
         (WidgetTester tester) async {
       await tester.pumpWidget(
         widgetTestBase(
@@ -113,7 +113,7 @@ void main() {
     });
 
     testWidgets(
-        'Make sure that the disabled button contain default styles values',
+        'Make sure that the disabled button contain default styles values.',
         (WidgetTester tester) async {
       await tester.pumpWidget(
         widgetTestBase(
@@ -130,7 +130,7 @@ void main() {
     });
 
     testWidgets(
-        'Make sure that the able button contain parameters styles values',
+        'Make sure that the able button contain parameters styles values.',
         (WidgetTester tester) async {
       await tester.pumpWidget(
         widgetTestBase(
@@ -179,7 +179,7 @@ void main() {
     });
 
     testWidgets(
-        'Make sure that the disabled button with parameters styles values',
+        'Make sure that the disabled button with parameters styles values.',
         (WidgetTester tester) async {
       await tester.pumpWidget(
         widgetTestBase(
