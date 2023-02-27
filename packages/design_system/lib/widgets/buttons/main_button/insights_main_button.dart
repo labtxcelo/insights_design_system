@@ -52,7 +52,7 @@ class InsightsMainButton extends StatelessWidget {
       hasCallback ? style.backgroundColor : style.disabledColor;
 
   Border get border => Border.all(
-        width: style.width,
+        width: style.borderWidth,
         color: hasCallback ? style.borderColor : InsightsColors.contrast,
       );
 
