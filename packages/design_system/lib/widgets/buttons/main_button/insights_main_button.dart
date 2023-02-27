@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../design_system.dart';
+import '../../../design_system.dart';
 
 class InsightsMainButton extends StatelessWidget {
   final String? buttonText;
@@ -26,7 +26,7 @@ class InsightsMainButton extends StatelessWidget {
         border: border,
       ),
       child: Material(
-        color: Colors.transparent,
+        color: InsightsColors.transparent,
         child: InkWell(
           borderRadius: radius,
           splashColor: style.splashColor.withOpacity(style.splashOpacity),
@@ -53,12 +53,12 @@ class InsightsMainButton extends StatelessWidget {
 
   Border get border => Border.all(
         width: style.width,
-        color: hasCallback ? style.borderColor : Colors.white,
+        color: hasCallback ? style.borderColor : InsightsColors.contrast,
       );
 
   BorderRadius get radius => BorderRadius.circular(style.radius);
 
   TextStyle get textStyle => style.textStyle.copyWith(
-        color: hasCallback ? style.textColor : Colors.white,
+        color: hasCallback ? style.textColor : InsightsColors.contrast,
       );
 }
